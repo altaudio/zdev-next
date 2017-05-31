@@ -14,7 +14,6 @@
     "lint:js": "eslint ./pages",
     "lint:js:without:prettier": "yarn lint:js -- --rule 'prettier/prettier: 0'",
     "lint:sass": "stylelint 'styles/**/*.*css' --syntax scss",
-    "format:sass": "stylefmt --recursive 'styles/**/*.*css'",
     "format:js": "prettier --single-quote --trailing-comma all --no-semi --print-width 180 --write \"pages/**/*.js\"",
     "precommit": "lint-staged && yarn lint",
     "eslint-check": "eslint --print-config .eslintrc | eslint-config-prettier-check"
@@ -63,7 +62,6 @@
     "node-sass": "^4.5.0",
     "prettier": "^1.2.2",
     "sass-lint": "^1.10.2",
-    "stylefmt": "^5.3.2",
     "stylelint": "^7.10.1",
     "stylelint-config-standard": "^16.0.0"
   },
@@ -71,10 +69,6 @@
     "pages/**/*.js": [
       "yarn format:js --",
       "git add"
-     ],
-     "styles/**/*.*css": [
-       "stylefmt",
-       "git add"
      ]
   }
 }
