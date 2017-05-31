@@ -6,7 +6,8 @@
     "check:node": "check-node-version --node \">=7.6.0 <8\"",
     "dev": "bin/buildStatic.sh && next dev",
     "build": "bin/buildStatic.sh && next build",
-    "start": "bin/buildStatic.sh && next start"
+    "start": "bin/buildStatic.sh && next start",
+    "postinstall": "yarn check:node"
   },
   "author": "Davide Bertola <dade@dadeb.it>",
   "license": "ISC",
