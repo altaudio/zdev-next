@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "build-static": "bin/buildStatic.sh"
+    "build:static": "bin/buildStatic.sh"
   },
   "author": "Davide Bertola <dade@dadeb.it>",
   "license": "ISC",
