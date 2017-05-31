@@ -1,3 +1,5 @@
 .next
 node_modules
 *.log
+static/bootstrap-sass-3.3.7
+static/ionicons-2.0.1
