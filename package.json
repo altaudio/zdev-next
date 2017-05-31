@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "bin/buildStatic.sh && next dev",
     "build": "bin/buildStatic.sh && next build",
-    "start": "bin/buildStatic.sh && next start",
-    "build:static": "bin/buildStatic.sh"
+    "start": "bin/buildStatic.sh && next start"
   },
   "author": "Davide Bertola <dade@dadeb.it>",
   "license": "ISC",
