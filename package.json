@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "dev": "bin/buildStatic.sh && next dev",
+    "build": "bin/buildStatic.sh && next build",
+    "start": "bin/buildStatic.sh && next start"
   },
   "author": "Davide Bertola <dade@dadeb.it>",
   "license": "ISC",
