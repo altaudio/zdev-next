@@ -7,7 +7,7 @@
     "test": "yarn check && npm run lint",
     "dev": "bin/buildStatic.sh && next dev",
     "build": "bin/buildStatic.sh && next build",
-    "start": "next start -p 3000",
+    "start": "next start",
     "deploy:dev": "bin/buildStatic.sh && yarn now -- --name=z-dev-server-dev",
     "deploy:prod": "bin/buildStatic.sh && yarn now -- --name=z-dev-server-prod",
     "deploy:ci:dev": "yarn deploy:dev -- --token=CeRSRknwt4kCcA1pEL32mVNV",
