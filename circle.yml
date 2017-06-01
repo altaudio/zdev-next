@@ -15,7 +15,12 @@ test:
     - yarn test
 
 deployment:
+  development:
+    branch: master
+    commands:
+      - yarn deploy:ci:dev
   production:
-    branch: now
+    branch: production
     commands:
       - yarn deploy:ci:prod
+
