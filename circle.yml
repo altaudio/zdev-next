@@ -16,6 +16,6 @@ test:
 
 deployment:
   production:
-    branch: production
+    branch: now
     commands:
-      - yarn run deploy
+      - yarn deploy:ci:prod
