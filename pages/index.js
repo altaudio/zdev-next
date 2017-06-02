@@ -1,6 +1,9 @@
 import React from 'react'
 import Head from 'next/head'
 import stylesheet from 'styles/index.scss'
+import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor'
+
+configureAnchors({ offset: -120, scrollDuration: 200 })
 
 export default () => (
   <div>
@@ -46,13 +49,15 @@ export default () => (
           </div> {/* /row */}
         </div> {/* /container */}
       </header>
-      <div id="about" className="about-box">
+      <div className="about-box">
         <div className="container">
           <div className="row">
             <div className="col-xs-12 block">
               <div className="row row-padding-about">
                 <div className="col-xs-12 hidden-xs hidden-sm col-md-4 col-md-offset-4 logo-image">
-                  <img src="/static/logo.svg" alt="ZDev logo" />
+                  <ScrollableAnchor id={'about'}>
+                    <img src="/static/logo.svg" alt="ZDev logo" />
+                  </ScrollableAnchor>
                 </div> {/* /col-xs-12 */}
               </div>
               <div className="col-xs-12 col-md-8 col-md-offset-2 text-center">
@@ -65,8 +70,10 @@ export default () => (
           </div> {/* /row */}
         </div> {/* /container */}
       </div> {/* /about-box */}
-      <div id="services" className="services container-fluid">
-        <h2 className="text-center">Services</h2>
+      <div className="services container-fluid">
+        <ScrollableAnchor id={'services'}>
+          <h2 className="text-center">Services</h2>
+        </ScrollableAnchor>
         <div className="row">
           <div className="col-xs-12">
             <div className="col-xs-12 col-sm-6 col-md-4 col-md-offset-2 service-item">
@@ -100,10 +107,12 @@ export default () => (
           </div>
         </div>
       </div>
-      <div id="our-work" className="portfolio">
+      <div className="portfolio">
         <div className="container">
           <div className="row">
-            <h2 className="text-center">Our Work</h2>
+            <ScrollableAnchor id={'our-work'}>
+              <h2 className="text-center">Our Work</h2>
+            </ScrollableAnchor>
             <div className="col-xs-12 col-sm-12 col-md-4 text-center">
               <h4><a href="https://www.youtube.com/watch?v=BM1gXV-NQro">Expresso App</a></h4>
               <div className="portfolio-image-container expresso-poster">
@@ -134,10 +143,12 @@ export default () => (
           </div>
         </div>
       </div>
-      <div id="techstack" className="techstack">
+      <div className="techstack">
         <div className="container">
           <div className="row">
-            <h2 className="text-center">Tech Stack</h2>
+            <ScrollableAnchor id={'techstack'}>
+              <h2 className="text-center">Tech Stack</h2>
+            </ScrollableAnchor>
             <div className="col-xs-12 col-sm-12 col-md-12 text-center">
               <h5>We‘re Fullstack Javascript Developers.</h5>
               <p className="headline-p">We <span className="glyphicon glyphicon-heart inline-glyphicon" /> React, React-Native, Redux, Node and Firebase.</p>
@@ -146,10 +157,12 @@ export default () => (
           </div>
         </div>
       </div>
-      <div id="team" className="team">
+      <div className="team">
         <div className="container">
           <div className="row">
-            <h2 className="text-center team">The Team</h2>
+            <ScrollableAnchor id={'team'}>
+              <h2 className="text-center team">The Team</h2>
+            </ScrollableAnchor>
             <div className="col-xs-12 col-sm-12 col-md-6 text-center">
               <img src="/static/Richheadshot.jpg" className="headshot" alt="Richard" />
               <h4 className="padding-top-image">Richard</h4>
@@ -171,10 +184,12 @@ export default () => (
           </div>
         </div>
       </div>
-      <div id="contact" className="contact-info container-fluid text-center block">
+      <div className="contact-info container-fluid text-center block">
         <div className="row">
           <div className="col-xs-12 col-sm-4">
-            <h6>Location</h6>
+            <ScrollableAnchor id={'contact'}>
+              <h6>Location</h6>
+            </ScrollableAnchor>
             <p>Central London</p>
           </div>
           <div className="col-xs-12 col-sm-4 margin-top-xs-40">

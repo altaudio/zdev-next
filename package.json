@@ -43,7 +43,9 @@
     "raw-loader": "^0.5.1",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
+    "react-scrollable-anchor": "^0.4.2",
     "sass-loader": "^4.1.1",
+    "smooth-scroll": "^11.1.0",
     "yarn": "^0.24.5"
   },
   "devDependencies": {
@@ -71,15 +73,16 @@
     "stylelint": "^7.10.1",
     "stylelint-config-standard": "^16.0.0"
   },
+  "engines": {
+    "node": ">=7.6.0 <8"
+  },
   "lint-staged": {
     "pages/**/*.js": [
       "yarn format:js --",
       "git add"
     ]
   },
-  "now" : {
-    "engines" : {
-      "node": ">=7.6.0 <8"
-    }
+  "now": {
+    "currentTeam": "zdev"
   }
 }
