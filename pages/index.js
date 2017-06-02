@@ -118,9 +118,7 @@ export default () => (
               <div className="portfolio-image-container expresso-poster">
                 <a href="https://www.youtube.com/watch?v=g7UTyrVkUXI"><img src="/static/zdevexpresso.png" className="portfolio-image" alt="Expresso App" /></a>
               </div>
-              <p>
-                Expresso helps customers to preorder coffee and pick it up from their favourite stores. <a href="https://www.youtube.com/watch?v=g7UTyrVkUXI">Watch video</a>
-              </p>
+              <p>Expresso helps customers to preorder coffee and pick it up from their favourite stores. <a href="https://www.youtube.com/watch?v=g7UTyrVkUXI">Watch video</a></p>
             </div>
             <div className="col-xs-12 col-sm-12 col-md-4 text-center">
               <h4><a href="https://www.youtube.com/watch?v=BM1gXV-NQro">Actfit App</a></h4>
