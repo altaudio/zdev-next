@@ -1,5 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
+import Header from 'components/header.js'
 import stylesheet from 'styles/index.scss'
 import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor'
 
@@ -17,38 +18,7 @@ export default () => (
       <meta name="description" content="ZDEV Developers specializing in full-stack Javascript development, React, React Native and Redux" />
     </Head>
     <div>
-      <header>
-        <div className="container">
-          <div className="row">
-            <nav className="navbar navbar-default navbar-fixed-top">
-              <div className="container-fluid">
-                <div className="navbar-header">
-                  <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-bar" aria-expanded="false">
-                    <span className="sr-only">Toggle navigation</span>
-                    <span className="icon-bar" />
-                    <span className="icon-bar" />
-                    <span className="icon-bar" />
-                  </button>
-                  <a className="brand" rel="home" data-scroll="true" href="#home" title="ZDev"><img src="/static/logo.svg" alt="ZDev logo" /></a>
-                </div> {/* /navbar-header */}
-                <div id="nav-bar" className="collapse navbar-collapse">
-                  <ul className="nav navbar-nav navbar-right navbar-links">
-                    <li><a data-scroll="true" href="#about">About</a></li>
-                    <li><a data-scroll="true" href="#services">Services</a></li>
-                    <li><a data-scroll="true" href="#our-work">Our Work</a></li>
-                    <li><a data-scroll="true" href="#techstack">Tech</a></li>
-                    <li><a data-scroll="true" href="#team">Team</a></li>
-                    <li><a href="https://blog.z-dev.io/">Blog</a></li>
-                    <li><a data-scroll="true" href="#contact">Contact</a></li>
-                    <li />
-                    <li />
-                  </ul>
-                </div> {/* /collapse navbar-collapse */}
-              </div> {/* /containerfluid */}
-            </nav>
-          </div> {/* /row */}
-        </div> {/* /container */}
-      </header>
+      <Header />
       <div className="about-box">
         <div className="container">
           <div className="row">
@@ -118,7 +88,9 @@ export default () => (
               <div className="portfolio-image-container expresso-poster">
                 <a href="https://www.youtube.com/watch?v=g7UTyrVkUXI"><img src="/static/zdevexpresso.png" className="portfolio-image" alt="Expresso App" /></a>
               </div>
-              <p>Expresso helps customers to preorder coffee and pick it up from their favourite stores. <a href="https://www.youtube.com/watch?v=g7UTyrVkUXI">Watch video</a></p>
+              <p>
+                Expresso helps customers to preorder coffee and pick it up from their favourite stores. <a href="https://www.youtube.com/watch?v=g7UTyrVkUXI">Watch video</a>
+              </p>
             </div>
             <div className="col-xs-12 col-sm-12 col-md-4 text-center">
               <h4><a href="https://www.youtube.com/watch?v=BM1gXV-NQro">Actfit App</a></h4>
